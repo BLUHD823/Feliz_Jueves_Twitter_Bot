@@ -10,7 +10,8 @@ pip install pytz
 pip install tweepy
 pip install schedule
 ```
-##Configuration
+
+## Configuration
 You will also need Twitter's developer keys that you can get in the Twitter Developer Portal 
 ```python
 api_key = "YOUR_API_KEY"
@@ -19,7 +20,7 @@ bearer_token = r"YOUR_BEARER_TOKEN"
 access_token = "YOUR_ACCESS_TOKEN"
 access_token_secret = "YOUR_ACCESS_TOKEN_SECRET"
 ```
-"You will also need to update the image paths located in the 'Imagenes' folder, as all of those paths are specified in the JSON file."
+
 You will also need to update the image paths located in the 'Imagenes' folder, as all those paths are specified in the JSON file.
 ```json
 [
