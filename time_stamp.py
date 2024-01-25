@@ -11,20 +11,21 @@ def set_time():
     #Convertirlo a la zona horaria argentina
     fecha_hora_argentina = fecha_hora_utc.astimezone(zona_horaria_argentina)
     strong =f'Hora en Argentina {fecha_hora_argentina.strftime("%Y-%m-%d %H:%M:%S")} and {fecha_hora_argentina.date()}'
-    #print(strong)
+    print(strong)
     return fecha_hora_argentina
 
 set_time()
 
 def horario(fecha_hora:datetime):
     day = fecha_hora.date()
-    if day.weekday() == 3:
+    if day.weekday() == 1:
         #print("Es jueves")
         if fecha_hora.strftime("%H:%M:%S") == "16:00:00":
             print("Es verdadero")
-            number = random.randint(1,4)
+            #number = random.randint(1,4)
+            number = random.choice([1,2,3,4,9])
             return number
-    elif day.weekday() != 3:
+    elif day.weekday() != 3 :
         #print("Es otro día")
         if fecha_hora.strftime("%H:%M:%S") == "08:00:00":
             #print("es another day")
@@ -35,7 +36,6 @@ def horario(fecha_hora:datetime):
         if fecha_hora.strftime("%H:%M:%S") == "16:00:00":
             #print("es gif")
             return 6
-        
-
-
-
+        if day.weekday() == 5:
+            if fecha_hora.strftime("%H:%M:%S") == "22:00:00":
+                return 8

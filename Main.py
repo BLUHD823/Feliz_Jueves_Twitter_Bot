@@ -28,16 +28,16 @@ def bot_tweet():
     fecha_hora_argentina = set_time()
     Feliz_Jueves = horario(fecha_hora_argentina)
     datos = open_json(json_path)
-    if Feliz_Jueves in [1,2,3,4]:
+    if Feliz_Jueves in [1,2,3,4,9]:
         image_path = get_path(datos,Feliz_Jueves)
         media_ids = image_upload(image_path)
         #Crear tweet
-        #client.create_tweet(text="feliz Domingo xdxdxd",media_ids=media_ids)
+        #client.create_tweet(text="",media_ids=media_ids)
         print("tweet enviado")
-    elif Feliz_Jueves in [5,6,7]:
+    elif Feliz_Jueves in [5,6,7,8]:
         image_path = get_path(datos,Feliz_Jueves)
         media_ids = image_upload(image_path)
-        #client.create_tweet(text="feliz Domingo xdxdxd",media_ids=media_ids)
+        #client.create_tweet(text="",media_ids=media_ids)
         print("tweet enviado")
 
 
