@@ -1,5 +1,5 @@
 import json
-json_path = 'Feliz_Jueves_Twitter_Bot\data_image.json'
+json_path = 'data_image.json'
 
 def open_json(json_path):
     with open(json_path,'r') as archivo:

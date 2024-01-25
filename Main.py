@@ -32,7 +32,7 @@ def bot_tweet():
         image_path = get_path(datos,Feliz_Jueves)
         media_ids = image_upload(image_path)
         #Crear tweet
-        #client.create_tweet(text="",media_ids=media_ids)
+        client.create_tweet(text="",media_ids=media_ids)
         print("tweet enviado")
     elif Feliz_Jueves in [5,6,7,8]:
         image_path = get_path(datos,Feliz_Jueves)

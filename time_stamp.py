@@ -18,9 +18,9 @@ set_time()
 
 def horario(fecha_hora:datetime):
     day = fecha_hora.date()
-    if day.weekday() == 1:
+    if day.weekday() == 3:
         #print("Es jueves")
-        if fecha_hora.strftime("%H:%M:%S") == "16:00:00":
+        if fecha_hora.strftime("%H:%M:%S") == "22:05:00":
             print("Es verdadero")
             #number = random.randint(1,4)
             number = random.choice([1,2,3,4,9])
