@@ -25,7 +25,7 @@ def horario(fecha_hora:datetime):
             #number = random.randint(1,4)
             number = random.choice([1,2,3,4,9])
             return number
-    elif day.weekday() != 3 :
+    elif day.weekday() != 3 and day.weekday() != 5:
         #print("Es otro día")
         if fecha_hora.strftime("%H:%M:%S") == "08:00:00":
             #print("es another day")
@@ -33,9 +33,9 @@ def horario(fecha_hora:datetime):
         if fecha_hora.strftime("%H:%M:%S") == "12:00:00":
             #print("es hi")
             return 5
-        if fecha_hora.strftime("%H:%M:%S") == "16:00:00":
+        if fecha_hora.strftime("%H:%M:%S") == "20:00:00":
             #print("es gif")
             return 6
-        if day.weekday() == 5:
+    if day.weekday() == 5:
             if fecha_hora.strftime("%H:%M:%S") == "22:00:00":
                 return 8
