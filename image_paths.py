@@ -9,7 +9,7 @@ def open_json(json_path):
 def get_path(datos,number):
     for paths in datos:
         for name,path in paths.items():
-            if 1 <= number <= 9:
+            if 1 <= number <= 10:
                 title = "image_" + str(number)
                 if name == title:
                     image_path = path
